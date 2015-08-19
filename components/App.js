@@ -15,7 +15,24 @@ var App = React.createClass({
 
     var self = this;
 
+    var requestBody = {
+      "username": username,
+      "password": newPassword
+    }
+
     // Post the new password to the Postoffice server for this user
+    $.ajax({
+      url: "https://postoffice-testing.herokuapp.com/reset_password",
+      dataType: 'json',
+      type: 'POST',
+      data: requestBody,
+      success: function(data) {
+        console.log("Password changed successfully!")
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
 
   },
 

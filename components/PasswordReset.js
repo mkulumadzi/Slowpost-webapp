@@ -39,7 +39,7 @@ var PasswordReset = React.createClass({
       this.setState({warning: "Passwords must match."});
     }
     else {
-      this.props.onPost(this.state.username, this.state.newPassword);
+      this.props.onPost(this.state.newPassword);
     }
 
   },

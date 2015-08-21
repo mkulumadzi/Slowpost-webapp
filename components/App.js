@@ -1,6 +1,15 @@
 var React = require('react');
+var Router = require('react-router'); // or var Router = ReactRouter; in browsers
 
-var PasswordReset = require('./PasswordReset');
+var DefaultRoute = Router.DefaultRoute;
+var Link = Router.Link;
+var Route = Router.Route;
+var RouteHandler = Router.RouteHandler;
+
+var ResetPassword = require('./ResetPassword');
+var About = require('./About');
+var Contact = require('./Contact');
+var RequestPasswordReset = require ('./RequestPasswordReset')
 
 var App = React.createClass({
 
@@ -10,46 +19,38 @@ var App = React.createClass({
 
   },
 
-
-  submitPasswordReset(newPassword){
-
-    var self = this;
-
-    var requestBody = {
-      'password': newPassword
-    }
-
-    // Post the new password to the Postoffice server for this user
-    $.ajax({
-      url: "http://localhost:9292/reset_password",
-      dataType: 'json',
-      type: 'POST',
-      headers: {"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6IjU1ZDYyNWM0NTlmNDQ0MGQ4YTAwMDAwMCIsImV4cCI6MTQ0MDE5MzQ2Mywic2NvcGUiOiJyZXNldC1wYXNzd29yZCJ9.0T5rMrNqjdwMzvGts7qMKJdamZCYK2hXZkN71BcguP_-0tMmbqNAs9FD1BT3jb1GDHc-QN4EARKj6dQjdrYM8T4QMPGdZ4hQoPdEFh3KWKPm42XIKIpVNyLiZ1wg3mRKfiJ0joMK_rvuWS-Zfm1WqlQkmfdv9tawH3NPAPxhzmgGRjAOrM4UJYwbvVBsbeD68EAAOUCy_nLypLE2d37bxiwL3It9mv86siwtzbybqOwCgcRKVhN3FxiaHp3eH-M6HIjsjV3NkHC_0YPyvsVy4ua-bwxc9Jzd4DLqM55ws03u2YDSNd439bRSAsj6l2-DxY3DbDxLAmt-lsrVe9AiwA"},
-      data: JSON.stringify(requestBody),
-      success: function(data) {
-        console.log("Password changed successfully!")
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-
-  },
-
-  render(){
-
+  render: function () {
     return (
-
       <div>
-        <h1>Reset Password</h1>
+        <header>
+          <ul>
+            <li><Link to="app">About</Link></li>
+            <li><Link to="contact">Contact</Link></li>
+          </ul>
+        </header>
 
-        <PasswordReset onPost={this.submitPasswordReset} />
-
+        {/* this is the important part */}
+        <RouteHandler/>
       </div>
-
     );
   }
 
+});
+
+// <Route name="reset-password" handler={ResetPassword} onPost={this.resetPassword}/>
+// <Route name="request-password-reset" handler={RequestPasswordReset} onPost={this.requestPasswordReset}/>
+
+var routes = (
+  <Route name="app" path="/" handler={App}>
+    <Route name="contact" handler={Contact}/>
+    <Route name="reset-password" handler={ResetPassword}/>
+    <Route name="request-password-reset" handler={RequestPasswordReset}/>
+    <DefaultRoute handler={About}/>
+  </Route>
+);
+
+Router.run(routes, function (Handler) {
+  React.render(<Handler/>, document.body);
 });
 
 module.exports = App;

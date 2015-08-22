@@ -6,7 +6,7 @@ var Contact = React.createClass({
 
     return (
         <div>
-          <h1>WE WOULD LOVE TO HEAR FROM YOU!</h1>
+          <h1>WE WOULD LOVE TO HEAR FROM YOU</h1>
           <p>Send any feedback about the app to feedback@slowpost.me</p>
           <p>Send support requests to support@slowpost.me</p>
         </div>

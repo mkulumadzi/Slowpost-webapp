@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watchify -v -d -t [ reactify --es6 ] main.js -o compiled.js",
-    "build": "NODE_ENV=production browserify -t [ reactify --es6 ] main.js | uglifyjs > compiled.js"
+    "watch": "watchify -v -d -t [ reactify --es6 ] main.js -o ./public/compiled.js",
+    "build": "NODE_ENV=production browserify -t [ reactify --es6 ] main.js | uglifyjs > ./public/compiled.js"
   },
   "author": "Evan Waters",
   "license": "MIT",
@@ -17,9 +17,12 @@
   },
   "devDependencies": {
     "browserify": "^9.0.8",
+    "grunt": "^0.4.5",
+    "grunt-aws": "^0.5.4",
+    "grunt-contrib-connect": "^0.11.2",
+    "react-router": "^0.13.3",
     "reactify": "^1.1.0",
     "uglify-js": "^2.4.20",
-    "watchify": "^3.1.2",
-    "react-router": "^0.13.3"
+    "watchify": "^3.1.2"
   }
 }

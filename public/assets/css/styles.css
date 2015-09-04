@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('OpenSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('OpenSans-Regular.svg') format('svg'); /* Legacy iOS */
+}
+
 .container {
 	max-width: 1024px;
 	text-align: center;
@@ -30,9 +40,52 @@ h1 {
 
 #warning-label {
 	width: 100%;
-	background-color: #00b6b9;
+	background-color: #00787a;
 }
 
 .input-group {
 	margin-left: 4%;
+}
+
+.color-background {
+	background: #00b6b9;
+}
+
+.navbar-default {
+	background-color: #00787a;
+	height: 50px;
+}
+
+body {
+	padding-top: 50px;
+}
+
+.nav-pills > li {
+	padding-top: 10px;
+	font-family: 'OpenSans-Regular', Fallback, sans-serif;
+}
+
+.nav-pills > li > a {
+	color: #ffffff;
+	font-family: 'OpenSans-Regular', Fallback, sans-serif;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li > a:hover.active {
+	background-color: #ffffff;
+	color: #00b6b9;
+}
+
+.nav-pills  > li > a.active {
+	background-color: #ffffff;
+	color: #00787a;
+}
+
+
+.nav-pills > li > a:active {
+	background-color: #0b0b0b;
+	color: #ffffff;
+}
+
+.page-header {
+	font-family: 'OpenSans-Regular', Fallback, sans-serif;
 }

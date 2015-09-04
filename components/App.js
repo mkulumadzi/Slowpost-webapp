@@ -23,13 +23,27 @@ var App = React.createClass({
   render: function () {
     return (
       <div>
-        <header>
-          <ul>
-            <li><Link to="app">About</Link></li>
-            <li><Link to="contact">Contact</Link></li>
-            <li><Link to="legal">Legal</Link></li>
-          </ul>
-        </header>
+        <nav className="navbar navbar-default navbar-fixed-top">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+              </button>
+              <a className="navbar-brand navbar-left" href="#">
+                <img src="assets/css/Slowpost Banner.png" alt="Brand" height="35" width="210"/>
+              </a>
+            </div>
+            <div id="navbar" className="navbar-collapse collapse navbar-right">
+              <ul className="nav nav-pills">
+                <li role="presentation"><Link to="contact">Contact</Link></li>
+                <li role="presentation"><Link to="legal">Legal</Link></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
         {/* this is the important part */}
         <RouteHandler/>

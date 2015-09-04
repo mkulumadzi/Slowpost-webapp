@@ -57,7 +57,7 @@ h1 {
 }
 
 body {
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
 .nav-pills > li {
@@ -88,4 +88,18 @@ body {
 
 .page-header {
 	font-family: 'OpenSans-Regular', Fallback, sans-serif;
+}
+
+.navbar-toggle, .navbar-toggle:focus, .navbar-toggle.collapsed, .navbar-toggle-collapsed:focus {
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+.navbar-toggle:hover, .navbar-toggle.collapsed:hover {
+	background-color: #f2f2f2;
+	border-color: #f2f2f2;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #00787a;
 }

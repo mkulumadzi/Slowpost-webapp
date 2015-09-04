@@ -26,7 +26,7 @@ var App = React.createClass({
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container-fluid">
             <div className="navbar-header">
-              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar" aria-expanded="false" aria-controls="navbar">
                 <span className="sr-only">Toggle navigation</span>
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
@@ -36,7 +36,7 @@ var App = React.createClass({
                 <img src="assets/css/Slowpost Banner.png" alt="Brand" height="35" width="210"/>
               </a>
             </div>
-            <div id="navbar" className="navbar-collapse collapse navbar-right">
+            <div className="navbar-collapse collapse navbar-right" id="navigationbar">
               <ul className="nav nav-pills">
                 <li role="presentation"><Link to="contact">Contact</Link></li>
                 <li role="presentation"><Link to="legal">Legal</Link></li>

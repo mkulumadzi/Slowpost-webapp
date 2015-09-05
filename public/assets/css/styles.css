@@ -11,7 +11,7 @@
 .container {
 	max-width: 1024px;
 	text-align: center;
-	margin: 20px auto;
+	min-height: 100%;
 }
 
 h1 {
@@ -57,7 +57,8 @@ h1 {
 }
 
 body {
-	padding-top: 100px;
+	min-height: 100%;
+	padding-top: 50px;
 }
 
 .nav-pills > li {
@@ -102,4 +103,24 @@ body {
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #00787a;
+}
+
+.jumbotron {
+	background-color: #00b6b9;
+	color: #ffffff;
+	font-family: 'OpenSans-Regular', Fallback, sans-serif;
+	min-height: 100%;
+	height:auto !important;
+}
+
+#screenshotCarousel {
+	background-color: #b5b5b5;
+}
+
+.carousel-image {
+	padding-top: 20px;
+	margin: auto;
+	height: 667px;
+	width: 375px;
+	padding-bottom: 160px;
 }

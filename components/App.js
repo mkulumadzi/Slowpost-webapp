@@ -47,6 +47,8 @@ var App = React.createClass({
 
         {/* this is the important part */}
         <RouteHandler/>
+
+        <div id="push"></div>
       </div>
     );
   }

@@ -11,7 +11,6 @@
 .container {
 	max-width: 1024px;
 	text-align: center;
-	min-height: 100%;
 }
 
 h1 {
@@ -56,9 +55,9 @@ h1 {
 	height: 50px;
 }
 
-body {
-	min-height: 100%;
-	padding-top: 50px;
+html, body {
+	height: 100%;
+	/*padding-top: 50px;*/
 }
 
 .nav-pills > li {
@@ -102,7 +101,7 @@ body {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #00787a;
+  background-color: #00787a;
 }
 
 .jumbotron {
@@ -110,17 +109,45 @@ body {
 	color: #ffffff;
 	font-family: 'OpenSans-Regular', Fallback, sans-serif;
 	min-height: 100%;
-	height:auto !important;
+	display:block;
+	overflow:auto;
 }
 
 #screenshotCarousel {
-	background-color: #b5b5b5;
+	background-color: #ffffff;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+	color: #00b6b9;
+}
+
+.carousel-indicators li {
+  background-color: #b5b5b5;
+}
+.carousel-indicators .active {
+  background-color: #00b6b9;
 }
 
 .carousel-image {
 	padding-top: 20px;
 	margin: auto;
-	height: 667px;
-	width: 375px;
+	height: 80%;
+	width: 20%;
 	padding-bottom: 160px;
+}
+
+.link {
+	color: #00787a;
+}
+
+.link:hover {
+	color: #00787a;
+	text-decoration: underline;
+}
+
+.item > .container > .carousel-caption {
+	color: #00b6b9;
+	font-family: 'OpenSans-Regular', Fallback, sans-serif;
+	text-shadow: none;
 }

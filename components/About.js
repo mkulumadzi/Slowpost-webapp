@@ -10,7 +10,7 @@ var About = React.createClass({
         <div className="jumbotron">
           <div className="container">
             <h1 className="page-header">Say something meaningful.</h1>
-            <p> Slowposts are beautiful, time-delayed message evoking a postcard or a letter. Enjoy the surprising, delightful, deeper form of communication that happens when people stop chatting and start saying something meaningful to each other.</p>
+            <p> Slowposts are beautiful time-delayed messages evokative of a postcard or a letter. Enjoy the surprising, deeper form of communication that happens when people stop chatting and start saying something meaningful.</p>
             <h2>Email <a className="link">info@slowpost.me</a> to join the private beta for iOS.</h2>
           </div>
         </div>

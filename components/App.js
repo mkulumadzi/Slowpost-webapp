@@ -50,14 +50,14 @@ var App = React.createClass({
         <RouteHandler/>
 
         <div id="push"></div>
+        <footer className="footer">
+            <div>Made in Menlo Park, California</div>
+        </footer>
       </div>
     );
   }
 
 });
-
-// <Route name="reset-password" handler={ResetPassword} onPost={this.resetPassword}/>
-// <Route name="request-password-reset" handler={RequestPasswordReset} onPost={this.requestPasswordReset}/>
 
 var routes = (
   <Route name="app" path="/" handler={App}>

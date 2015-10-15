@@ -6,6 +6,20 @@
        url('../fonts/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/OpenSans-Regular.svg') format('svg'); /* Legacy iOS */
+   font-family: 'OpenSans-Light';
+   src: url('../fonts/OpenSans-Light.eot'); /* IE9 Compat Modes */
+   src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/OpenSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/OpenSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/OpenSans-Light.svg') format('svg'); /* Legacy iOS */
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/OpenSans-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/OpenSans-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/OpenSans-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/OpenSans-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/OpenSans-Semibold.svg') format('svg'); /* Legacy iOS */
 }
 
 .color-background {
@@ -130,39 +144,9 @@
 	margin-left: 4%;
 }
 
-#password-reset-form {
-	margin: 40px auto 60px;
-}
-
-#username {
-	border-radius: 3px;
-}
-
-#new-password {
-	border-radius: 3px;
-}
-#confirm-password {
-	border-radius: 3px;
-}
-
-#submit-button {
-	width: 100%;
-	border-radius: 3px;
-}
-
-#warning-label {
-	width: 100%;
-	background-color: #00787a;
-}
-
 h1 {
 	margin-bottom: 20px;
 }
-
-/*html, body {
-	height: 100%;
-	padding-top: 60px;
-}*/
 
 html {
   padding-top: 60px;
@@ -183,11 +167,81 @@ body {
   padding: 40px;
   color: #ffffff;
   font-size: 20px;
-  font-family: 'OpenSans-Regular', Fallback, sans-serif;
+  font-family: 'OpenSans-Light', Fallback, sans-serif;
   vertical-align:middle;
   text-align: center;
 }
 
 .footer-emphasis {
   font-size: 30px;
+}
+
+.form-container {
+  text-align: center;
+  font-family: 'OpenSans-Light', Fallback, sans-serif;
+}
+
+.input-group {
+  margin: auto;
+  text-align: center;
+}
+
+#password-reset-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.input-group > .form-control {
+  float: none;
+}
+
+#new-password {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 18pt;
+  height: auto;
+}
+
+#confirm-password {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 18pt;
+  height: auto;
+}
+
+#submit-button {
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #00787a;
+  color: #ffe93e;
+  font-family: 'OpenSans-Semibold', Fallback, sans-serif;
+  border-style: none;
+  font-size: 18px;
+}
+
+.form-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'OpenSans-Light', Fallback, sans-serif;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+#warning-label {
+	width: 100%;
+  color: #0b0b0b;
+  font-family: 'OpenSans-Light', Fallback, sans-serif;
+  font-size: 18pt;
 }

@@ -10,7 +10,6 @@ var RouteHandler = Router.RouteHandler;
 var ResetPassword = require('./ResetPassword');
 var About = require('./About');
 var Contact = require('./Contact');
-var RequestPasswordReset = require ('./RequestPasswordReset');
 var Legal = require ('./Legal');
 
 var App = React.createClass({
@@ -63,7 +62,6 @@ var routes = (
   <Route name="app" path="/" handler={App}>
     <Route name="contact" handler={Contact}/>
     <Route name="reset-password" handler={ResetPassword}/>
-    <Route name="request-password-reset" handler={RequestPasswordReset}/>
     <Route name="legal" handler={Legal}/>
     <DefaultRoute handler={About}/>
   </Route>

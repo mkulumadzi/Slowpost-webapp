@@ -10,7 +10,9 @@ var RouteHandler = Router.RouteHandler;
 var ResetPassword = require('./ResetPassword');
 var About = require('./About');
 var Contact = require('./Contact');
-var Legal = require ('./Legal');
+var Privacy = require ('./Privacy');
+var Terms = require('./Terms');
+var SuccessfulPasswordReset = require('./SuccessfulPasswordReset');
 
 var App = React.createClass({
 
@@ -39,7 +41,8 @@ var App = React.createClass({
             <div className="navbar-collapse collapse navbar-right" id="navigationbar">
               <ul className="nav nav-pills">
                 <li role="presentation"><Link to="contact">Contact</Link></li>
-                <li role="presentation"><Link to="legal">Legal</Link></li>
+                <li role="presentation"><Link to="privacy">Privacy</Link></li>
+                <li role="presentation"><Link to="terms">Terms</Link></li>
               </ul>
             </div>
           </div>
@@ -62,7 +65,9 @@ var routes = (
   <Route name="app" path="/" handler={App}>
     <Route name="contact" handler={Contact}/>
     <Route name="reset-password" handler={ResetPassword}/>
-    <Route name="legal" handler={Legal}/>
+    <Route name="privacy" handler={Privacy}/>
+    <Route name="terms" handler={Terms}/>
+    <rout name="reset-password/success" handler={SuccessfulPasswordReset}/>
     <DefaultRoute handler={About}/>
   </Route>
 );

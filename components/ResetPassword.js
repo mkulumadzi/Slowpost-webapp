@@ -1,4 +1,5 @@
 var React = require('react');
+var Router = require('react-router');
 
 var ResetPassword = React.createClass({
 
@@ -44,6 +45,10 @@ var ResetPassword = React.createClass({
 
   },
 
+  showSuccess(event){
+    window.location.href = "#/reset-password/success";
+  },
+
   resetPassword(newPassword){
 
     var self = this;
@@ -54,13 +59,13 @@ var ResetPassword = React.createClass({
 
     // Post the new password to the Postoffice server for this user
     $.ajax({
-      url: "http://localhost:9292/reset_password",
+      url: "https://production.slowpost.me/reset_password",
       dataType: 'json',
       type: 'POST',
       headers: {"Access-Control-Allow-Credentials": false, "Authorization": "Bearer " + this.props.query.token},
       data: JSON.stringify(requestBody),
       success: function(data) {
-        this.setState({warning: "Password changed successfully!"});
+        this.showSuccess();
       }.bind(this),
       error: function(xhr, status, err) {
         this.setState({warning: "Request expired - try asking to reset your password again!"});

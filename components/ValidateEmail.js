@@ -26,7 +26,7 @@ var ValidateEmail = React.createClass({
 
     // Post the new password to the Postoffice server for this user
     $.ajax({
-      url: "https://postoffice-testing.herokuapp.com/validate_email",
+      url: "https://production.slowpost.me/validate_email",
       dataType: 'json',
       type: 'POST',
       headers: {"Access-Control-Allow-Credentials": false, "Authorization": "Bearer " + this.props.query.token},

@@ -8,6 +8,7 @@ var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
 
 var ResetPassword = require('./ResetPassword');
+var ValidateEmail = require('./ValidateEmail');
 var About = require('./About');
 var Contact = require('./Contact');
 var Privacy = require ('./Privacy');
@@ -67,7 +68,8 @@ var routes = (
     <Route name="reset-password" handler={ResetPassword}/>
     <Route name="privacy" handler={Privacy}/>
     <Route name="terms" handler={Terms}/>
-    <rout name="reset-password/success" handler={SuccessfulPasswordReset}/>
+    <Route name="reset-password/success" handler={SuccessfulPasswordReset}/>
+    <Route name="validate-email" handler={ValidateEmail}/>
     <DefaultRoute handler={About}/>
   </Route>
 );

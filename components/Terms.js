@@ -29,7 +29,7 @@ var Terms = React.createClass({
 
         <h3>User Content</h3>
 
-        <p className="detail-text">The Services provided by Slowpost enables users to share photos and notes with close friends and family. By using the Services, you are responsible for any data charges or other fees associated with your wireless carrier.</p>
+        <p className="detail-text">The Services provided by Slowpost enable users to share photos and notes with close friends and family. By using the Services, you are responsible for any data charges or other fees associated with your wireless carrier.</p>
 
         <p className="detail-text">You agree that you are solely responsible for your User Content, and that Slowpost does not assume any liability for any claims that arise from it. We reserve the right to delete user content if it is deemed to be inappropriate, and to block your further use of the application and Services.</p>
 
@@ -39,11 +39,11 @@ var Terms = React.createClass({
 
         <p className="detail-text">The following activities are prohibited:</p>
 
-        <li>Unauthorized access of another users&#39; account or any of their information.</li>
+        <li>Unauthorized access of another user&#39;s account or any of their information.</li>
         <li>Distributing other users&#39; Slowpost content in any way, shape or form without their written consent.</li>
         <li>Modifying or creating derivative works from Slowpost content for commercial purposes.</li>
-        <li>Unauthorized access of the Slowpost API and Slowpost data.
-        Any use of Slowpost and its Services that is illegal, beyond the scope of their intended use, or that could harm other people or entities.</li>
+        <li>Unauthorized access of the Slowpost API and Slowpost data.</li>
+        <li>Any use of Slowpost and its Services that is illegal, beyond the scope of their intended use, or that could harm other people or entities.</li>
         <li>Sharing material that is in violation of applicable copyright laws.</li>
 
         <h3>Account Security</h3>
@@ -56,7 +56,7 @@ var Terms = React.createClass({
 
         <h3>Copyright Policy</h3>
 
-        <p className="detail-text">We respect intellectual property rights, and agree to conform to the Digital Millenium Copyright Act ("DMCA") and other applicable laws. In accordance with these laws, we reserve the right to remove any content that is deemed to be in violation of copyright laws, and/or to suspend an offender&#39;s account.</p>
+        <p className="detail-text">We respect intellectual property rights, and agree to conform to the Digital Millennium Copyright Act ("DMCA") and other applicable laws. In accordance with these laws, we reserve the right to remove any content that is deemed to be in violation of copyright laws, and/or to suspend an offender&#39;s account.</p>
 
         <p>SLOWPOST SERVICES AND CONTENT ARE PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</p>
 

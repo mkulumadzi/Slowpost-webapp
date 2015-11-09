@@ -32,7 +32,7 @@ var About = React.createClass({
                   <img className="app-image" src="assets/slowpost-message.png" alt="Slowpost Message"/>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6">
-                  <p className="text-box">Pick a friend (or three), choose a photo and compose a message.</p>
+                  <p className="text-box">Pick a friend (or three), choose your own photo or one from our gallery, and compose a message.</p>
                 </div>
               </div>
             </div>
@@ -42,11 +42,14 @@ var About = React.createClass({
           <div className="card centered col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-xs-12 col-sm-6 col-sm-offset-2 col-md-6 col-md-offset-2">
+                <div className="hidden-xs col-sm-6 col-sm-offset-2 col-md-6 col-md-offset-2">
                   <p className="text-box">Choose standard delivery, or pick a date and time to have your message arrive.</p>
                 </div>
                 <div className="col-xs-12 col-sm-4 col-md-4">
                   <img className="app-image" src="assets/schedule-delivery.png" alt="Slowpost Message"/>
+                </div>
+                <div className="col-xs-12 hidden-sm hidden-md">
+                  <p className="text-box">Choose standard delivery, or pick a date and time to have your message arrive.</p>
                 </div>
               </div>
             </div>
@@ -60,7 +63,7 @@ var About = React.createClass({
                   <img className="app-image" src="assets/view-conversation.png" alt="Slowpost Message"/>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6">
-                  <p className="text-box">A few days later, your friends will get their Slowpost!</p>
+                  <p className="text-box">At the chosen date, your friends will get their Slowpost!</p>
                 </div>
               </div>
             </div>

@@ -59,6 +59,10 @@ var Privacy = React.createClass({
 
         <p className="detail-text">We are concerned about safeguarding the confidentiality of your information and provide physical, electronic, and procedural safeguards to protect information we process and maintain. User Provided data and Automatically Collected information are securely stored in the cloud via a third-party provider (Heroku). We limit access to this data to authorized employees and contractors. Please be aware that, although we endeavor provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.</p>
 
+        <h3>Law Enforcement</h3>
+
+        <p className="detail-text">Slowpost requires that Law Enforcement agencies provide a federal or state search warrant for any requests that include message content or other user-attributable data.</p>
+
         <h3>Changes</h3>
 
         <p className="detail-text">This Privacy Policy may be updated from time to time for any reason. As stated above, we will update the date at the top of this policy each time it changes, and will send an email announcing any major updates to the policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>

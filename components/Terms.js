@@ -19,7 +19,7 @@ var Terms = React.createClass({
 
         <h3>You</h3>
 
-        <p className="detail-text">We designed Slowpost for people who are at least 13 years old. Persons under the age of 13 are prohibited from creating an account. By using our Services, you affirm that you are at last 13 years of age or older.</p>
+        <p className="detail-text">We designed Slowpost for people who are at least 13 years old. Persons under the age of 13 are prohibited from creating an account. By using our Services, you affirm that you are at least 13 years of age or older.</p>
 
         <p className="detail-text">At our sole discretion, we may refuse to offer the Services to any person or entity, and may suspend an account without any notice.</p>
 

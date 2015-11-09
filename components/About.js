@@ -66,7 +66,7 @@ var About = React.createClass({
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container centered">
           <h1>Available for free on iOS!</h1>
           <a href="http://itunes.com/apps/slowpost"><img className="download-icon" src="assets/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store"/></a>
           <h3>Email <a href="mailto:info@slowpost.me" className="link">info@slowpost.me</a> for information about other platforms.</h3>

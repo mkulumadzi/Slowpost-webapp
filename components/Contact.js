@@ -6,12 +6,10 @@ var Contact = React.createClass({
 
     return (
       <div>
-        <div className="jumbotron">
-          <div className="container">
-            <h1 className="page-header">We would love to hear from you.</h1>
-            <p>Send any feedback about the app to <a className="link">feedback@slowpost.me</a></p>
-            <p>Send support requests to <a className="link">support@slowpost.me</a></p>
-          </div>
+        <div className="centered">
+          <h1>We would love to hear from you</h1>
+          <p>Send any feedback about the app to <a href="mailto:feedback@slowpost.me" className="link">feedback@slowpost.me</a></p>
+          <p>Send support requests to <a href="mailto:support@slowpost.me" className="link">support@slowpost.me</a></p>
         </div>
       </div>
     );

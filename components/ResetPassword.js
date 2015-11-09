@@ -82,7 +82,7 @@ var ResetPassword = React.createClass({
         <form id="password-reset-form" onSubmit={this.handleSubmit}>
   				<div className="form-group">
   					<div className="col-xs-12 col-md-6 col-md-offset-3">
-              <p className="form-title">Reset Your Password</p>
+              <h1>Reset Your Password</h1>
   						<div className="input-group">
   							<input type="password" className="form-control" id="new-password" placeholder="Enter new password..."
   							value={this.state.newPassword} onChange={this.handleChangeForNewPassword} />

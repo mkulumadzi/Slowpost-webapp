@@ -7,75 +7,70 @@ var About = React.createClass({
     return (
 
       <div>
-        <div className="jumbotron">
-          <div className="container">
-            <h1 className="page-header">Say something meaningful.</h1>
-            <p>Slowposts are time-delayed messages evoking a postcard. Enjoy the deeper form of communication that happens when people stop chatting and start saying something meaningful to each other.</p>
-            <h2>Email <a className="link">info@slowpost.me</a> to join the private beta for iOS.</h2>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="centered col-xs-12 col-sm-6 col-md-6">
+              <p className="page-title">Say something meaningful</p>
+              <p>Slowpost brings the joy of a postcard to your phone, creating surprising, intimate communication with the people you care about most.</p>
+              <a href="http://itunes.com/apps/slowpost"><img className="app-icon hidden-xs hidden-sm" src="assets/slowpost-icon.png"/></a>
+              <a href="http://itunes.com/apps/slowpost"><img className="download-icon" src="assets/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store"/></a>
+              <h3>Email <a href="mailto:info@slowpost.me" className="link">info@slowpost.me</a> to learn more.</h3>
+            </div>
+            <div className="centered col-xs-12 col-sm-6 col-md-6">
+              <img className="main-app-image" src="assets/slowpost-mailbox.png" alt="Slowpost Mailbox"/>
+            </div>
           </div>
         </div>
-
-        <div id="screenshotCarousel" className="carousel slide" data-ride="carousel">
-          <ol className="carousel-indicators">
-            <li data-target="#screenshotCarousel" data-slide-to="0" className="active"></li>
-            <li data-target="#screenshotCarousel" data-slide-to="1"></li>
-            <li data-target="#screenshotCarousel" data-slide-to="2"></li>
-            <li data-target="#screenshotCarousel" data-slide-to="3"></li>
-            <li data-target="#screenshotCarousel" data-slide-to="4"></li>
-          </ol>
-          <div className="carousel-inner" role="listbox">
-            <div className="item active">
-              <img className="carousel-image first-slide" src="assets/select-recipients.png" alt="First slide"/>
-              <div className="carousel-caption">
-                <h1>Create a Slowpost.</h1>
-                <p>Choose who to write to, and add your own photo or choose from a gallery of cards.</p>
+        <div className="row grey centered">
+          <h1>Keep in touch</h1>
+        </div>
+        <div className="row grey">
+          <div className="card centered col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-xs-12 col-sm-4 col-md-4">
+                  <img className="app-image" src="assets/slowpost-message.png" alt="Slowpost Message"/>
+                </div>
+                <div className="col-xs-12 col-sm-6 col-md-6">
+                  <p className="text-box">Pick a friend (or three), choose a photo and compose a message.</p>
+                </div>
               </div>
             </div>
-            <div className="item">
-                <img className="carousel-image second-slide" src="assets/compose-message.png" alt="Second slide"/>
-                <div className="carousel-caption">
-                  <h1>Compose a message.</h1>
-                  <p>Say something quick, or write a long note - the choice is yours!</p>
+          </div>
+        </div>
+        <div className="row grey">
+          <div className="card centered col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-xs-12 col-sm-6 col-sm-offset-2 col-md-6 col-md-offset-2">
+                  <p className="text-box">Choose standard delivery, or pick a date and time to have your message arrive.</p>
                 </div>
-            </div>
-            <div className="item">
-                <img className="carousel-image third-slide" src="assets/schedule-delivery.png" alt="Third slide"/>
-                <div className="carousel-caption">
-                  <h1>Decide when to deliver.</h1>
-                  <p>Choose the standard delivery option, or schedule when your message will arrive.</p>
-                </div>
-            </div>
-            <div className="item">
-                <img className="carousel-image fourth-slide" src="assets/view-conversation.png" alt="Fourth slide"/>
-                <div className="carousel-caption">
-                  <h1>View a conversation.</h1>
-                  <p>See a history of the messages you have exchanged with your friends.</p>
-                </div>
-            </div>
-            <div className="item">
-                <img className="carousel-image fifth-slide" src="assets/read-mail.png" alt="Fifth slide"/>
-                <div className="carousel-caption">
-                  <h1>Read your mail.</h1>
-                  <p>See what your friend had to say, and reply to keep the conversation going!</p>
+                <div className="col-xs-12 col-sm-4 col-md-4">
+                  <img className="app-image" src="assets/schedule-delivery.png" alt="Slowpost Message"/>
                 </div>
               </div>
-          </div>
-          <a className="left carousel-control" href="#screenshotCarousel" role="button" data-slide="prev">
-            <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="right carousel-control" href="#screenshotCarousel" role="button" data-slide="next">
-            <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
-          </a>
-        </div>
-
-        <div className="jumbotron">
-          <div className="container">
-            <h2>Slowpost is coming to the Apple App Store soon!</h2>
+            </div>
           </div>
         </div>
-
+        <div className="row grey">
+          <div className="card centered col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-xs-12 col-sm-4 col-md-4">
+                  <img className="app-image" src="assets/view-conversation.png" alt="Slowpost Message"/>
+                </div>
+                <div className="col-xs-12 col-sm-6 col-md-6">
+                  <p className="text-box">A few days later, your friends will get their Slowpost!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <h1>Available for free on iOS!</h1>
+          <a href="http://itunes.com/apps/slowpost"><img className="download-icon" src="assets/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store"/></a>
+          <h3>Email <a href="mailto:info@slowpost.me" className="link">info@slowpost.me</a> for information about other platforms.</h3>
+        </div>
       </div>
     );
 

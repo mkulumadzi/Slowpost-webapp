@@ -49,9 +49,9 @@ var ValidateEmail = React.createClass({
 
     return (
       <div>
-        <div className="jumbotron">
+        <div className="centered">
           <div className="container">
-            <h3>{this.state.status}</h3>
+            <h1>{this.state.status}</h1>
             <p>{this.state.message}</p>
           </div>
         </div>

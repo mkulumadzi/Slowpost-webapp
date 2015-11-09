@@ -1,6 +1,6 @@
 var React = require('react');
 var Router = require('react-router'); // or var Router = ReactRouter; in browsers
-require('bootstrap')
+require('bootstrap');
 
 var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
@@ -23,6 +23,11 @@ var App = React.createClass({
 
   },
 
+  dismissNav(){
+    var navMain = $("#navigationbar");
+    navMain.collapse('hide');
+  },
+
   render: function () {
     return (
       <div>
@@ -35,7 +40,7 @@ var App = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand navbar-left" href="#">
+              <a className="navbar-brand navbar-left" href="#" onClick={this.dismissNav}>
                 <img src="assets/css/Slowpost Banner.png" alt="Brand" height="35" width="210"/>
               </a>
             </div>
@@ -54,7 +59,11 @@ var App = React.createClass({
 
         <div id="push"></div>
         <footer className="footer">
-            <div>Made in Menlo Park, California</div>
+          <a href="https://twitter.com/SlowpostApp" className="footer-social btn btn-block btn-social btn-twitter">
+            <span className="fa fa-twitter"></span>Follow us on Twitter
+          </a>
+          <p className="footer-text">Made in Menlo Park, California</p>
+          <p className="footer-text"><i className="fa fa-copyright"></i>2015, Kuyenda, LLC</p>
         </footer>
       </div>
     );
@@ -76,6 +85,13 @@ var routes = (
 
 Router.run(routes, function (Handler) {
   React.render(<Handler/>, document.body);
+});
+
+$(function(){
+    var navMain = $("#navigationbar");
+    navMain.on("click", "a", null, function () {
+        navMain.collapse('hide');
+    });
 });
 
 module.exports = App;

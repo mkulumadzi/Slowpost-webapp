@@ -6,9 +6,9 @@ var SuccessfulPasswordReset = React.createClass({
 
     return (
       <div>
-        <div className="jumbotron">
+        <div className="centered">
           <div className="container">
-            <h3>Success!</h3>
+            <h1>Success!</h1>
             <p>Your password has been reset - try logging in again.</p>
           </div>
         </div>

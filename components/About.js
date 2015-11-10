@@ -48,7 +48,7 @@ var About = React.createClass({
                 <div className="col-xs-12 col-sm-4 col-md-4">
                   <img className="app-image" src="assets/schedule-delivery.png" alt="Slowpost Message"/>
                 </div>
-                <div className="col-xs-12 hidden-sm hidden-md">
+                <div className="col-xs-12 hidden-sm hidden-md hidden-lg">
                   <p className="text-box">Choose standard delivery, or pick a date and time to have your message arrive.</p>
                 </div>
               </div>

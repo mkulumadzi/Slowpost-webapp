@@ -61,7 +61,7 @@ var Privacy = React.createClass({
 
         <h3>Law Enforcement</h3>
 
-        <p className="detail-text">Slowpost requires that Law Enforcement agencies provide a federal or state search warrant for any requests that include message content or other user-attributable data.</p>
+        <p className="detail-text">Slowpost requires that Law Enforcement agencies provide a federal or state search warrant for any requests that include message content. For other user-attributable data, Slowpost requires a court order, subpoena, or other legal process in accordance with applicable law.</p>
 
         <h3>Changes</h3>
 

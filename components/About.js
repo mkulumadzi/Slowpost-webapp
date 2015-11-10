@@ -12,7 +12,7 @@ var About = React.createClass({
             <div className="centered col-xs-12 col-sm-6 col-md-6">
               <p className="page-title">Say something meaningful</p>
               <p>Slowpost brings the joy of a postcard to your phone, creating surprising, intimate communication with the people you care about most.</p>
-              <a href="http://itunes.com/apps/slowpost"><img className="app-icon hidden-xs hidden-sm" src="assets/slowpost-icon.png"/></a>
+              <a href="https://itunes.apple.com/us/app/slowpost/id1018618447"><img className="app-icon hidden-xs hidden-sm" src="assets/slowpost-icon.png"/></a>
               <a href="https://itunes.apple.com/us/app/slowpost/id1018618447"><img className="download-icon" src="assets/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store"/></a>
               <h3>Email <a href="mailto:info@slowpost.me" className="link">info@slowpost.me</a> to learn more.</h3>
             </div>

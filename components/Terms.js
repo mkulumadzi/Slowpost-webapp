@@ -9,7 +9,7 @@ var Terms = React.createClass({
 
         <h1>Slowpost Terms and Conditions</h1>
 
-        <p className="detail-text">Last updated: October 20, 2015</p>
+        <p className="detail-text">Last updated: November 9, 2015</p>
 
         <p className="detail-text">Please read these Terms of Use ("Terms") closely. By downloading or using the products and services provided by Slowpost and any of our affiliates, you agree to be bound by these Terms. These Terms affect your legal rights and obligations - if you do not agree to these Terms, do not use the associated Services.</p>
 

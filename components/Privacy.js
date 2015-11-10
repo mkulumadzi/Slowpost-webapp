@@ -8,7 +8,7 @@ var Privacy = React.createClass({
       <div className="document">
         <h1>Slowpost Privacy Policy</h1>
 
-        <p className="detail-text">Last Updated: October 20, 2015</p>
+        <p className="detail-text">Last Updated: November 9, 2015</p>
 
         <p className="detail-text">Slowpost was created to enable friends and family to communicate more meaningfully, by sharing time-delayed photos and notes with each other - like having a postcard on your phone!</p>
 
@@ -18,17 +18,17 @@ var Privacy = React.createClass({
 
         <p>User Provided Information</p>
 
-        <p className="detail-text">Slowpost collects basic account information from you when you register, including your name, email address, a username and a password of your choice. Over time, we may enable you to enter additional information on your profile, such as a photo or a birthday. You may optionally give Slowpost access to the contacts on your phone, enabling us to search for registered users among your contact list, and making it easier to send emails to people from the app if they are on on Slowpost yet. We do not keep a permanent record of your contacts on our servers.</p>
+        <p className="detail-text">Slowpost collects basic account information from you when you register, including your name, email address, a username and a password of your choice. Over time, we may enable you to enter additional information on your profile, such as a photo or a birthday. You may optionally give Slowpost access to the contacts on your phone, enabling us to search for registered users among your contact list, and making it easier to send emails to people from the app if they are not on Slowpost yet. We do not keep a permanent record of your contacts on our servers.</p>
 
         <p className="detail-text">As you use Slowpost, we will also store the content you create, including the messages you write, the images you add, and associated metadata such as who the messages are to, and when they were created.</p>
 
-        <p className="detail-text">We may use the information you provided us with, such as your email address, to contact you and provide you with important information such as marketing promotions and required notices.</p>
+        <p className="detail-text">We may use the information you provide us with, such as your email address, to contact you and provide you with important information such as marketing promotions and required notices.</p>
 
         <p>Automatically Collected Information</p>
 
-        <p className="detail-text">In addition, the Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile devices unique device ID, the IP address of your mobile device, your mobile operating system, and information about the way you use Slowpost.</p>
+        <p className="detail-text">In addition, the Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile device&#39;s unique device ID, the IP address of your mobile device, your mobile operating system, and information about the way you use Slowpost.</p>
 
-        <h3>Does the application collect realtime, precise location information about the device?</h3>
+        <h3>Does the application collect real-time, precise location information about the device?</h3>
 
         <p className="detail-text">This Application does not collect precise information about the location of your mobile device.</p>
 
@@ -38,10 +38,10 @@ var Privacy = React.createClass({
 
         <p className="detail-text">We may disclose User Provided and Automatically Collected Information:</p>
 
-        <li>as required by law, such as to comply with a subpoena, or similar Privacy process;</li>
-        <li>when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
-        <li>with our trusted services providers who work on our behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
-        <li>if Slowpost and its parent company are involved in a merger, acquisition, or sale of all or a portion of its assets, you will be notified via email and/or a prominent notice on our Web site of any change in ownership or uses of this information, as well as any choices you may have regarding this information.</li>
+        <li>As required by law, such as to comply with a subpoena, or similar Privacy process;</li>
+        <li>When we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+        <li>With our trusted services providers who work on our behalf, do not have independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+        <li>If Slowpost and its parent company are involved in a merger, acquisition, or sale of all or a portion of its assets, you will be notified via email and/or a prominent notice on our Web site of any change in ownership or uses of this information, as well as any choices you may have regarding this information.</li>
 
         <h3>What are my opt-out rights?</h3>
 
@@ -53,7 +53,7 @@ var Privacy = React.createClass({
 
         <h3>Children</h3>
 
-        <p className="detail-text">We do not use Slowpost to knowingly solicit data from or market to children under the age of 13. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us at <a href="mailto:support@slowpost.me" className="link">support@slowpost.me</a>. We will delete such information as requested by parents or guardians.</p>
+        <p className="detail-text">We do not use Slowpost to knowingly solicit data from, or market to, children under the age of 13. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us at <a href="mailto:support@slowpost.me" className="link">support@slowpost.me</a>. We will delete such information as requested by parents or guardians.</p>
 
         <h3>Security</h3>
 

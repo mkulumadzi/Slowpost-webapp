@@ -59,8 +59,12 @@ var App = React.createClass({
 
         <div id="push"></div>
         <footer className="footer">
+          
           <a href="https://twitter.com/SlowpostApp" className="footer-social btn btn-block btn-social btn-twitter">
             <span className="fa fa-twitter"></span>Follow us on Twitter
+          </a>
+          <a href="https://www.facebook.com/slowpostapp" className="footer-social btn btn-block btn-social btn-facebook">
+            <span className="fa fa-facebook"></span>Like us on Facebook
           </a>
           <p className="footer-text">Made in Menlo Park, California</p>
           <p className="footer-text"><i className="fa fa-copyright"></i>2015, Kuyenda, LLC</p>

@@ -17,7 +17,7 @@ var ValidateEmail = React.createClass({
 
   showError(event){
     this.setState({status: 'Error :('})
-    this.setState({message: 'Your request was invalid.'});
+    this.setState({message: 'Your request has expired. Please email <a href="mailto:support@slowpost.me" className="link">support@slowpost.me</a> to request another verification token!'});
   },
 
   validateEmail(){
@@ -52,7 +52,7 @@ var ValidateEmail = React.createClass({
         <div className="centered">
           <div className="container">
             <h1>{this.state.status}</h1>
-            <p>{this.state.message}</p>
+            <p dangerouslySetInnerHTML={{__html: this.state.message}} />
           </div>
         </div>
       </div>

@@ -42,6 +42,7 @@ var ValidateEmail = React.createClass({
   },
 
   componentDidMount() {
+    document.title = "Slowpost - Validate Email Address";
     this.validateEmail();
   },
 

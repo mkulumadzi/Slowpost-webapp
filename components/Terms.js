@@ -2,6 +2,10 @@ var React = require('react');
 
 var Terms = React.createClass({
 
+  componentDidMount: function() {
+    document.title = "Slowpost - Terms and Conditions";
+  },
+
   render() {
 
     return (

@@ -2,6 +2,10 @@ var React = require('react');
 
 var Privacy = React.createClass({
 
+  componentDidMount: function() {
+    document.title = "Slowpost - Privacy Policy";
+  },
+
   render() {
 
     return (

@@ -3,6 +3,10 @@ var Router = require('react-router');
 
 var ResetPassword = React.createClass({
 
+  componentDidMount: function() {
+    document.title = "Slowpost - Reset Password";
+  },
+
   getInitialState() {
     return {
       warning: '',

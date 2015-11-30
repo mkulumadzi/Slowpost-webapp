@@ -2,6 +2,10 @@ var React = require('react');
 
 var SuccessfulPasswordReset = React.createClass({
 
+  componentDidMount: function() {
+    document.title = "Slowpost - Password Reset Successfully";
+  },
+
   render() {
 
     return (

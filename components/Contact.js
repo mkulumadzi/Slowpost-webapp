@@ -2,6 +2,10 @@ var React = require('react');
 
 var Contact = React.createClass({
 
+  componentDidMount: function() {
+    document.title = "Slowpost - Contact Us";
+  },
+
   render() {
 
     return (

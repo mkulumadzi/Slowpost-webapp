@@ -6,6 +6,7 @@ var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
+var NotFoundRoute = Router.NotFoundRoute;
 
 var ResetPassword = require('./ResetPassword');
 var ValidateEmail = require('./ValidateEmail');
@@ -13,6 +14,7 @@ var About = require('./About');
 var Contact = require('./Contact');
 var Privacy = require ('./Privacy');
 var Terms = require('./Terms');
+var NotFound = require('./NotFound');
 var SuccessfulPasswordReset = require('./SuccessfulPasswordReset');
 
 var App = React.createClass({
@@ -59,7 +61,7 @@ var App = React.createClass({
 
         <div id="push"></div>
         <footer className="footer">
-          
+
           <a href="https://twitter.com/SlowpostApp" className="footer-social btn btn-block btn-social btn-twitter">
             <span className="fa fa-twitter"></span>Follow us on Twitter
           </a>
@@ -84,6 +86,7 @@ var routes = (
     <Route name="reset-password/success" handler={SuccessfulPasswordReset}/>
     <Route name="validate-email" handler={ValidateEmail}/>
     <DefaultRoute handler={About}/>
+    <NotFoundRoute handler={NotFound}/>
   </Route>
 );
 

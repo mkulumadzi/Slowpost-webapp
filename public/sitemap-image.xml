@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>http://slowpost.me/#/</loc>
+    <image:image>
+      <image:loc>http://slowpost.me/assets/slowpost-icon.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://slowpost.me/assets/Download_on_the_App_Store_Badge_US-UK_135x40.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://slowpost.me/assets/schedule-delivery.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://slowpost.me/assets/slowpost-mailbox.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://slowpost.me/assets/slowpost-message.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://slowpost.me/assets/view-conversation.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://slowpost.me/#/contact</loc>
+    <image:image>
+      <image:loc>http://slowpost.me/assets/slowpost-icon.png</image:loc>
+    </image:image>
+  </url>
+</urlset>

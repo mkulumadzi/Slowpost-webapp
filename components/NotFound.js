@@ -11,7 +11,7 @@ var NotFound = React.createClass({
     return (
       <div className="centered">
         <h1>Sorry, we could&#39;t find what you are looking for...</h1>
-        <img className="app-icon" src="assets/slowpost-icon-upsidedown.png"/>
+        <img className="app-icon" src="assets/slowpost-icon-upsidedown.png" alt="Something went wrong."/>
       </div>
     );
 

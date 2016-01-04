@@ -33,10 +33,10 @@ var About = React.createClass({
             <div className="container-fluid">
               <div className="row">
                 <div className="col-xs-12 col-sm-4 col-md-4">
-                  <img className="app-image" src="assets/slowpost-message.png" alt="Slowpost Message view"/>
+                  <img className="app-image" src="assets/choose-recipients.png" alt="Slowpost Message view"/>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6">
-                  <p className="text-box">Pick a friend (or three), choose your own photo or one from our gallery, and compose a message.</p>
+                  <p className="text-box">Pick a friend (or three), and begin composing the perfect message.</p>
                 </div>
               </div>
             </div>
@@ -47,13 +47,13 @@ var About = React.createClass({
             <div className="container-fluid">
               <div className="row">
                 <div className="hidden-xs col-sm-6 col-sm-offset-2 col-md-6 col-md-offset-2">
-                  <p className="text-box">Choose standard delivery, or pick a date and time to have your message arrive.</p>
+                  <p className="text-box">Use your own photo, adding an overlay if you&#39;d like, or choose a card from our gallery.</p>
                 </div>
                 <div className="col-xs-12 col-sm-4 col-md-4">
-                  <img className="app-image" src="assets/schedule-delivery.png" alt="Schedule delivery view"/>
+                  <img className="app-image" src="assets/choose-card.png" alt="Schedule delivery view"/>
                 </div>
                 <div className="col-xs-12 hidden-sm hidden-md hidden-lg">
-                  <p className="text-box">Choose standard delivery, or pick a date and time to have your message arrive.</p>
+                  <p className="text-box">Use your own photo, adding an overlay if you&#39;d like, or choose a card from our gallery.</p>
                 </div>
               </div>
             </div>
@@ -64,10 +64,10 @@ var About = React.createClass({
             <div className="container-fluid">
               <div className="row">
                 <div className="col-xs-12 col-sm-4 col-md-4">
-                  <img className="app-image" src="assets/view-conversation.png" alt="Slowpost conversation view"/>
+                  <img className="app-image" src="assets/delivery-options.png" alt="Slowpost conversation view"/>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6">
-                  <p className="text-box">At the chosen date, your friends will get their Slowpost!</p>
+                  <p className="text-box">Send your Slowpost right away, or choose to have it arrive at a latter date and time.</p>
                 </div>
               </div>
             </div>
